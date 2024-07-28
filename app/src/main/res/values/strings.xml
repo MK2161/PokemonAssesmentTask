@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">PokemonAssesmentTask</string>
+    <string name="about">About</string>
+    <string name="basestat">BaseStat</string>
+</resources>
