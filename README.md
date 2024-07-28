@@ -1,9 +1,11 @@
 TextTalk :
         jetpack Compose 
         DI FOR KOIN 
-        MVVM pattern cleanArchitecture
+        MVVM pattern & cleanArchitecture
         Compose Navigation
         Retrofit
+        Courotines
+        Coil
         
 
 
