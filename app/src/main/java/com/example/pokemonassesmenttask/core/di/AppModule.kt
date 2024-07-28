@@ -19,8 +19,8 @@ object AppModule {
     }
 
     private val repoModules = module {
-        factory<PokemonRepository> { PokemonRepositoryImpl(get()) }
-        factory<PokemonUseCaseProvider>{ PokemonUseCase(get()) }
+        single<PokemonRepository> { PokemonRepositoryImpl(get()) }
+        single<PokemonUseCaseProvider>{ PokemonUseCase(get()) }
     }
 
     private val commonModules = module {
