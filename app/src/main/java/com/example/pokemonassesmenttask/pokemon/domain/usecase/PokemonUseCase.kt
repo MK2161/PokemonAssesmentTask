@@ -7,7 +7,7 @@ import com.example.pokemonassesmenttask.pokemon.data.model.PokemonDetails
 import com.example.pokemonassesmenttask.pokemon.data.model.PokemonLists
 import com.example.pokemonassesmenttask.pokemon.domain.PokemonUseCaseProvider
 
-class PokemonUseCase(val pokemonRepository: PokemonRepository) : PokemonUseCaseProvider {
+class PokemonUseCase(private val pokemonRepository: PokemonRepository) : PokemonUseCaseProvider {
     override suspend fun getPokemonList(
         limit: Int?,
         offset: Int?
@@ -18,5 +18,4 @@ class PokemonUseCase(val pokemonRepository: PokemonRepository) : PokemonUseCaseP
     override suspend fun getPokemonDetails(id: String?): CustomResponse<PokemonDetails, LocalException> {
         return pokemonRepository.getPokemonDetails(id)
     }
-
 }
